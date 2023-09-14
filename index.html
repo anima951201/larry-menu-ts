@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header mb-2" onclick="ctrlMenuBtn()">Menu</div>
+    <div id="buttonsContainer" class="category">
+      <!-- 您的酒種按鈕將在這裡動態生成 -->
+    </div>
+
+    <div id="originButtonsContainer" class="origin">
+      <!-- 這裡將渲染符合選擇的酒種的產地按鈕 -->
+    </div>
+
+    <div id="itemsContainer" class="items row">
+      <!-- 這裡將渲染符合選擇的酒種和產地的卡片 -->
+    </div>
+    <div class="footer">
+      <img src="./img/000.png" alt="" class="img-fluid position-fixed bottom-0 end-5">
+    </div>
+  </div>
+</body>
+<script src="./js/dataarr.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

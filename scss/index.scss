@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
+
+::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+// color setting
+$color-pri: #333;
+$color-sec: #eee;
+$color-light: #53acac;
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 2.5rem;
+  background-color: $color-sec;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-pri;
+  cursor: pointer;
+
+  // &:active {
+  //   background-color: $color-pri;
+  //   color: $color-sec;
+  // }
+}
+
+.category {
+  position: fixed;
+  top: -1000rem;
+  left: 0;
+  background-color: $color-sec;
+  // color: $color-light;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &.show {
+    // top: 2.5rem;
+    top: 0;
+    margin-top: 2.5rem;
+    transition: 0.5s;
+  }
+
+  .categoryBtn {
+
+    &:active {
+      background-color: $color-pri;
+      color: $color-sec;
+    }
+  }
+}
+
+.origin {
+  position: absolute;
+  top: 2.6rem;
+  z-index: 8;
+  background-color: #fff;
+  max-width: 100%;
+  // height: auto;
+  padding: 5px 0;
+}
+
+.items {
+  margin: 6rem auto;
+  min-height: 2.5rem;
+
+  .img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: $color-pri;
+  min-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  overflow: hidden;
+}
+
+.active {
+  background-color: $color-light;
+  color: #fff;
+}
