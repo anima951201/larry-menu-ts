@@ -77,24 +77,25 @@ function showItems(selectedCategory, selectedOrigin) {
     // card.style.maxWidth = '540px';
 
     const itemRow = document.createElement('div');
-    itemRow.classList.add('row', 'g-0');
+    itemRow.classList.add('item-box', 'row', 'g-0');
     card.appendChild(itemRow);
 
     // img-wrap
     const imgWrap = document.createElement('div');
-    imgWrap.classList.add('col-4', 'position-relative', 'w-20', 'h-20');
+    imgWrap.classList.add('img-wrap', 'col-4', 'position-relative', 'w-20', 'h-20');
     itemRow.appendChild(imgWrap);
 
     // img
     const image = document.createElement('img');
-    image.classList.add('img-contain', 'img-fluid', 'rounded-start', 'position-absolute', 'top-50', 'start-50', 'translate-middle', 'img-center');
+    // image.classList.add('img-contain', 'img-fluid', 'rounded-start', 'position-absolute', 'top-50', 'start-50', 'translate-middle', 'img-center');
+    image.classList.add('item-img', 'img-fluid');
     image.src = item.image;
     image.alt = item.name;
     imgWrap.appendChild(image);
 
     // info
     const info = document.createElement('div');
-    info.classList.add('col-8');
+    info.classList.add('col-8', 'info');
     itemRow.appendChild(info);
 
     // 商品名稱
