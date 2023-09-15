@@ -118,16 +118,21 @@ img {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   background-color: $color-pri;
   min-width: 100%;
   max-height: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   z-index: 999999;
   overflow: hidden;
+
+  >img {
+    margin: 0 auto;
+  }
 }
 
 .active {
