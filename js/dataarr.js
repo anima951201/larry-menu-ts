@@ -2,6 +2,9 @@
 // 這個頁面是萊萊的可修改區域
 // ***
 
+// 注意注意注意 新增image時，把整組[圖片的名稱及檔名]替換成你的內容即可
+// 圖片盡量接近正方形才會呈現完整
+// ./img/[圖片的名稱及檔名]
 
 const data = [
   // category: 'whiskey'
@@ -66,6 +69,5 @@ const data = [
   { name: '台灣其他調酒1995', category: 'other', origin: '台灣', image: './img/j-01.png', description: '西班牙特色紅葡萄酒', price: '$1850' },
   { name: 'spain其他調酒187', category: 'other', origin: 'spain', image: './img/j-02.png', description: '西班牙特色紅葡萄酒', price: '$1850' },
   { name: 'France其他調酒1885', category: 'other', origin: 'France', image: './img/j-03.png', description: '西班牙特色紅葡萄酒', price: '$1850' },
-
   // ... 在此放置所有商品數據
 ];
